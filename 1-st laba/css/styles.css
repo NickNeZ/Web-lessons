@@ -467,7 +467,7 @@ background-color: #ae67fa;
 .blog .left_art{
   display: flex;
   flex-direction: column;
-  min-width: 400px;
+  flex: 2;
 }
 
 .blog .right_art{
@@ -475,6 +475,7 @@ background-color: #ae67fa;
   flex-direction: row;
   flex-wrap: wrap;
   row-gap: 3rem;
+  flex: 4;
 }
 
 /* .blog .one_main_art{
