@@ -361,9 +361,10 @@ p {
 .beyond_expect{
   display: flex;
   align-items:flex-end;
-  width: 60%;
+  /* width: 60%; */
   column-gap: 1.188rem;
   margin: 1rem 0 7rem;
+  padding: 0 2rem;
 }
 
 .beyond_expect .beyond_expect__right{
@@ -385,7 +386,7 @@ p {
 .beyond_expect .beyond_expect__right .container__content{
   color: #81AFDD;
   line-height: 30px;
-  width: 75%;
+  width: 90%;
   
 }
 
