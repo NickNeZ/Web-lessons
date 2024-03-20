@@ -17,86 +17,71 @@ export const footerBottomData = {
     Все права защищены`
 };
 
-export const footerLinksData = [
-    {
-        type: "header",
-        href: "#",
-        label: "Ссылки",
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "Овероны"
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "Соц. сети"
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "Счетчики"
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "Контакты"
-    }
-];
+export const footerLinksData = {
+    header: "Ссылки",
+    elements: [
+        {
+            href: "#",
+            label: "Овероны"
+        },
+        {
+            href: "#",
+            label: "Соц. сети"
+        },
+        {
+            href: "#",
+            label: "Счетчики"
+        },
+        {
+            href: "#",
+            label: "Контакты"
+        }
+    ]
+};
 
-export const footerCompanyData = [
-    {
-        type: "header",
-        href: "#",
-        label: "Компания",
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "Условия использования"
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "Перс. данные"
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "Конаткты"
-    }
-];
+export const footerCompanyData = {
+    header: "Компания",
+    elements: [
+        {
+            href: "#",
+            label: "Условия использования"
+        },
+        {
+            href: "#",
+            label: "Перс. данные"
+        },
+        {
+            href: "#",
+            label: "Конаткты"
+        }
+    ]
+    
+};
 
-export const footerContactData = [
-    {
-        type: "header",
-        href: "#",
-        label: "Контакты",
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "ул. Профессора Поздеева, 13, к.Г, Пермь"
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "+7 (342) 2-198-520"
-    },
-    {
-        type: "link",
-        href: "#",
-        label: "info@pstu.ru"
-    }
-];
+export const footerContactData = {
+    header: "Контакты",
+    elements: [
+        {
+            href: "#",
+            label: "ул. Профессора Поздеева, 13, к.Г, Пермь"
+        },
+        {
+            href: "#",
+            label: "+7 (342) 2-198-520"
+        },
+        {
+            href: "#",
+            label: "info@pstu.ru"
+        }
+    ]
+};
 
 export const footerData = {
     footerUpperData,
     footerBottomData,
     footerLinksData,
     footerCompanyData,
-    footerContactData,
+    footerContactData
 };
 
 export default footerData;

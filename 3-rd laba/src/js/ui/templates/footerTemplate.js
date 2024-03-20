@@ -24,43 +24,32 @@ export const createFooterLogoTemplate = ({logo: {src, alt}, address}) => {
     return template;
 };
 
-export const createFooterLinksTemplate = ({type, href, label}) => {
-    switch (type) {
-        case "header":
-            return `
-            <div class="footer__links">
-                <p class="bottom__links_header">${label}</p>
-                <div class="footer__info_links">`;
-        case "link":
-            return `<a class="footer__link" href="${href}">${label}</a>`;
-        default: 
-            return ``;
-    }
+export const createFooterLinksTemplate = ({href, label}) => {
+    return `<a class="footer__link" href="${href}">${label}</a>`;
 };
 
-export const createFooterBottomLinksTemplate = (footerLinksData) => {
-    const template = footerLinksData.map((item) => createFooterLinksTemplate(item)).join("");
-    console.log(template);
-    return template;
-    
+
+export const createFooterColumnTemplate = ({header, elements}) => {
+    const footerLinksTemplate = elements.map((element) => createFooterLinksTemplate(element)).join("");
+
+    const result = `
+    <div class="footer__links">
+        <div class="footer__info_links">
+            <p class="bottom__links_header">${header}</p>
+            ${footerLinksTemplate}
+        </div>
+    </div>
+    `;
+   return result;
 };
 
-export const createFooterBottomCompanyTemplate = (footerCompanyData) => {
-    const template = footerCompanyData.map((item) => createFooterLinksTemplate(item)).join("");
-    return template;
-};
-
-export const createFooterBottomContactTemplate = (footerContactData) => {
-    const template = footerContactData.map((item) => createFooterLinksTemplate(item)).join("");
-    return template;
-};
 
 export const footerTemplate = ({footerUpperData, footerBottomData, footerLinksData, footerCompanyData, footerContactData}) => {
     const footerUpperTemplate = createFooterUpperTemplate(footerUpperData);
     const footerLogoTemplate = createFooterLogoTemplate(footerBottomData);
-    const footerLinksTemplate = createFooterBottomLinksTemplate(footerLinksData);
-    const footerCompanyTemplate = createFooterBottomCompanyTemplate(footerCompanyData);
-    const footerContactTemplate = createFooterBottomContactTemplate(footerContactData);
+    const footerLinksTemplate = createFooterColumnTemplate(footerLinksData);
+    const footerCompanyTemplate = createFooterColumnTemplate(footerCompanyData);
+    const footerContactTemplate = createFooterColumnTemplate(footerContactData);
 
     const resultTemplate = `
         ${footerUpperTemplate}
@@ -68,14 +57,8 @@ export const footerTemplate = ({footerUpperData, footerBottomData, footerLinksDa
             ${footerLogoTemplate}
             <div class="footer__bottom_right">
                 ${footerLinksTemplate}
-                </div>
-                </div>
                 ${footerCompanyTemplate}
-                </div>
-                </div>
                 ${footerContactTemplate}
-                </div>
-                </div>
             </div>
         </div>
         <div class="footer__copyright">
