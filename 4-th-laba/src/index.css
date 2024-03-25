@@ -341,7 +341,7 @@ p {
 .what_is_chatgpt_section .what_is_chatgpt_section__middle {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .what_is_chatgpt_section .what_is_chatgpt_section__middle .middle__header {
@@ -366,7 +366,7 @@ p {
 .what_is_chatgpt_section .what_is_chatgpt_section__bottom {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   column-gap: 2rem;
 }
 
@@ -453,7 +453,7 @@ p {
 .beyond_expect .beyond_expect__right{
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   padding: 0 0 2rem;
   gap: 1em;
 }
@@ -585,7 +585,7 @@ background-color: #ae67fa;
   background-color: #042C54;
   padding: 2rem;
   row-gap: 1rem;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .blog .description_art_main{
@@ -595,7 +595,7 @@ background-color: #ae67fa;
   padding: 2rem;
   flex: 2;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .blog .description__art_up{
@@ -704,7 +704,7 @@ background-color: #ae67fa;
 .footer .footer__bottom_right{
   display: flex;
   column-gap: 12rem; 
-  justify-content: end;
+  justify-content: flex-end;
   /* flex-basis: 68%; */
 }
 
@@ -716,7 +716,7 @@ background-color: #ae67fa;
 .footer .footer__bottom .footer__bottom_right .bottom__links_header{
   margin: 0px 0px 9px;
   font-size: 14px;
-  text-align: start;
+  text-align: flex-start;
   font-weight: 700;
 }
 
@@ -724,8 +724,8 @@ background-color: #ae67fa;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  text-align: start;
-  align-items: start;
+  text-align: flex-start;
+  align-items: flex-start;
 
 }
 
@@ -737,13 +737,13 @@ background-color: #ae67fa;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  text-align: start;
-  align-items: start;
+  text-align: flex-start;
+  align-items: flex-start;
 }
 
 .footer .footer__bottom .footer__company_header{
   margin: 0px 0px 34px;
-  text-align: start;
+  text-align: flex-start;
 }
 
 .footer .footer__bottom .footer__contact_info{
@@ -754,13 +754,13 @@ background-color: #ae67fa;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  text-align: start;
+  text-align: flex-start;
   
 }
 
 .footer .footer__bottom .footer__contact_info .footer__contact_header{
   margin: 0px 0px 34px;
-  text-align: start;
+  text-align: flex-start;
 }
 
 .footer .footer__bottom .footer__bottom_right .footer__link{

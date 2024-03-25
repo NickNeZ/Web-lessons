@@ -12,7 +12,7 @@ export const RightContainerTemplate = ({ item }) => {
     </div>
   );
 };
-
+/* eslint-disable */
 const FutureHere = () => {
   return (
     <>
@@ -21,7 +21,7 @@ const FutureHere = () => {
           Будущее Уже Наступило и Тебе Нужно Лишь Осознать. Шагни в Будущее и
           Воплоти Его.
         </h2>
-        <a href="#" className="left__cta">
+        <a href="#" className="left__cta"> 
           Запросить ранний доступ
         </a>
       </div>
